@@ -37,12 +37,12 @@ export default function Simulador() {
 
     const handleChange = () => {
         var investimentoValue = parseFloat(variaveis.investimento)
-        console.log(variaveis.investimento)
+        
         var tempoValue = parseFloat(variaveis.tempo)
         var cdi = variaveis.cdi
         var selic = variaveis.selic
-        var rendimentoValue = (investimentoValue * ((1 + (cdi * (selic / 100))) ** tempoValue))
-        console.log(rendimentoValue)
+        //var rendimentoValue = (investimentoValue * ((1 + (cdi * (selic / 100))) ** tempoValue))
+        
         setVariaveis({ ...variaveis, rendimento: (investimentoValue * ((1 + (cdi * (selic / 100))) ** tempoValue)) })
     }
 
